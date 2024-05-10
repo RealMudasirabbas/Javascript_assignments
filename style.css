@@ -1,0 +1,43 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(72, 122, 122);
+    border: 2px solid red;
+}
+
+#exe1 {
+    display: inline;
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid blue; */
+    color: #fff;
+}
+
+button {
+    display: block;
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+input {
+    width: inherit;
+}
+#sec-num {
+    margin-left: 23px;
+}
+hr {
+    background-color: black;
+}
+#multiply {
+    display: inline;
+    margin-left: 150px;
+}
+#divide {
+    display: inline;
+}
