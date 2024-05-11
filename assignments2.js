@@ -68,8 +68,7 @@ divide.addEventListener("click",() => {
 })
 
 
-let str = "str"
-str.su
+
 
 
 // Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.
@@ -100,19 +99,101 @@ submitStr.addEventListener("click", () => {
 
 // Remove a character at the specified position of a given string and return the new string
 
+const input_Text = document.getElementById('input_text');
+const input_Char = document.getElementById("input-char");
+const submit_Text = document.getElementById('submit-text');
+const ans_Text = document.getElementById('ans-text');
+ans_Text.style.display = "none";
+
+// let str = "str";
+
+function removeACharacterFromStr(str,character) {
+    const findChar = str.indexOf(character)
+    let selectChar = str.replace(str[findChar],"")
+    return selectChar
+}
+
+// console.log(removeACharacterFromStr("python","t"));
+
+submit_Text.addEventListener("click", () => {
+    const inputVal = input_Text.value;
+    const inputcharacter = input_Char.value;
+    let modifiedStr = removeACharacterFromStr(inputVal,inputcharacter);
+    ans_Text.innerText = modifiedStr;
+    ans_Text.style.fontSize = "24px";
+    ans_Text.style.display = "block";
+    return modifiedStr
+    
+
+})
+
 // Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
 
+const queryInput = document.getElementById("input_str");
+const queryBtn = document.getElementById("submit_str");
+const queryAns = document.getElementById("ans_text");
+
+function modifyStr(str) {
+    let firstChar = str[0];
+    let secondChar = str[str.length - 1]
+    const slicedStr = str.slice(1,length - 1)
+
+    const modifiedStr = secondChar + slicedStr + firstChar;
+    // console.log(modifiedStr)
+    return modifiedStr
+
+}
+
+// console.log(modifyStr("python"))
+
+queryBtn.addEventListener("click", () => {
+    const inputVal = queryInput.value;
+    let modifiedString = modifyStr(inputVal);
+    queryAns.style.fontSize = "18px";
+    queryAns.innerText = modifiedString;
+
+})
+
+
 // Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.
+function createNewStr(str) {
+    
+}
+
 
 //  Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
 
+function multipleOfANumber(num) {
+    
+}
+
+
 //  Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back. The string length must be 3 or more.
 
+function createThreeCharStr(str) {
+    
+}
+
 // Write a JavaScript program to find the largest of three given integers.
+
+function findLargeNumber(num1,num2,num3) {
+    
+}
 
 // Write a JavaScript program to evaluate a student's total marks across various examinations and determine their grade. The grading criteria are as follows:
 // 1. If the total marks fall within the range of 89 to 100 (inclusive), the student receives an A+ grade.
 // 2. If the examination is labeled as "Final-exam," the student will receive an A+ grade only if their total marks are 90 or greater. Assume that final examination means we pass 'true' as second parameter otherwise blank.
 // 3. If the student achieves an A+ grade, the program should return 'true'; otherwise, it should return 'false'.
 
+
+function evaluateStudentGrade(marks) {
+    
+}
+
+
 // Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80.
+
+
+function sumOfTwoIntegers(num1,num2) {
+    
+}
