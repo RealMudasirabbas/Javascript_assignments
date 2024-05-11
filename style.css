@@ -12,7 +12,7 @@
     border: 2px solid red;
 }
 
-#exe1 {
+.exe {
     display: inline;
     width: 500px;
     height: 500px;
@@ -20,10 +20,13 @@
     color: #fff;
 }
 
-button {
+
+#user-submit {
     display: block;
     border: 3px solid aqua;
     border-radius: 10px;
+    font-size: 14px;
+    margin-left: 224px;
 }
 input {
     width: inherit;
@@ -37,7 +40,25 @@ hr {
 #multiply {
     display: inline;
     margin-left: 150px;
+    background-color: rgb(110, 110, 187);
+    color: #ffffff;
+    font-size: 18px;
 }
 #divide {
     display: inline;
+    background-color: rgb(110, 110, 187);
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#ansText {
+    display: block;
+}
+
+#submit-str {
+    display: block;
+    margin-left: 190px;
+    background-color: rgb(110, 110, 187);
+    color: #ffffff;
+    font-size: 14px;
 }

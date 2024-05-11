@@ -55,10 +55,6 @@ function sumAndProductOfArrayElements(arr) {
 }
 sumAndProductOfArrayElements([1, 2, 3, 4, 5, 6]);
 
-// We have the following arrays :
-
-    color = ['Blue ', 'Green', 'Red', 'Orange', 'Violet', 'Indigo', 'Yellow '];
-        o =     ['th', 'st', 'nd', 'rd'];
 
 // Write a JavaScript program to display the colors in the following way :
 // "1st choice is Blue ."
@@ -68,19 +64,25 @@ sumAndProductOfArrayElements([1, 2, 3, 4, 5, 6]);
 // "3rd choice is Red."
 
 // - - - - - - - - - - - - -
+color = ['Blue ', 'Green', 'Red', 'Orange', 'Violet', 'Indigo', 'Yellow '];
+o = ['th', 'st', 'nd', 'rd'];
 
-// function displayColors(n) {
-//     for (let i = 0; i < color.length; i++) {
+function createOrdinal(n) {
 
-//         let ordinal = n % 10;
-//         if((n % 10 >= 1 && n % 10 <= 11)){
+    let ordinal = n % 100;
 
-//         }
+    const suffix = ordinal + ((o[ordinal - 20] % 10) || (o[ordinal]) || (o[0]))
+        return suffix
+    }
 
-//     }
-// }
+// createOrdinal(3)
 
-// displayColors();
+for (let i = 0; i < color.length; i++) {
+    const ordinalNum = createOrdinal(i + 1)
+    const ordinalColors = ordinalNum + " choice" + " is " + color[i];
+    console.log(ordinalColors)
+    
+}
 
 //  There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
 // Sample array :
@@ -96,6 +98,6 @@ function sumOfArray(arr) {
 }
 
 sumOfArray(array1);
-6;
+
 sumOfArray(array2);
 

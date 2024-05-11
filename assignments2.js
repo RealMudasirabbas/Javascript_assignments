@@ -16,29 +16,88 @@ function generateArandomNumber() {
     const randomNumber = Math.floor(Math.random() * 10 + 1);
     return randomNumber.toString();
 }
-let randomNum = generateArandomNumber();
+
 
 
 userButton.addEventListener('click', (e) => {
+    let randomNum = generateArandomNumber();
     if (inputText.value == randomNum) {
-        console.log('Good work! ' + 'The random number is: ', randomNum);
+        answer.innerText = 'Good work! Random Number matched ' + 'The random number is: ' + randomNum;
+        answer.style.display = "block";
     } else {
-        console.log(
-            'The random Number does not match the guess Number',
-            randomNum,
-        );
+        answer.innerText = 'The random Number does not match the guess Number: ' + randomNum;
+        answer.style.display = "block";
     }
-    answer.innerText = "Correct Answer: " + randomNum;
-    answer.style.display = "block";
-    randomNum = generateArandomNumber();
+    //answer.innerText = "Correct Answer: " + randomNum;
+    
 });
 
 
 
 // Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).
+const firstNum = document.getElementById("first-num");
+const secondNum = document.getElementById("sec-num");
+const multiply = document.getElementById("multiply");
+const divide = document.getElementById("divide");
+const spanText = document.getElementById("ansText");
+
+function multiplyANumber(num1,num2){
+    const multipliedNumbersResult = num1 * num2;
+    return multipliedNumbersResult
+};
+
+
+function divideANumber(num1,num2){
+    const dividedNumbersResult = num1 / num2;
+    return dividedNumbersResult;
+};
+
+multiply.addEventListener("click",() => {
+    const inputValueNum1 = firstNum.value;
+    const inputValueNum2 = secondNum.value;
+    const result = multiplyANumber(inputValueNum1,inputValueNum2)
+    spanText.innerText = "The result of multiplication is: " + result
+    return result
+})
+divide.addEventListener("click",() => {
+    const inputValueNum1 = firstNum.value;
+    const inputValueNum2 = secondNum.value;
+    const result = divideANumber(inputValueNum1,inputValueNum2)
+    spanText.innerText = "The result of division is: " + result
+    return result
+})
+
+
+let str = "str"
+str.su
 
 
 // Write a JavaScript program to create another string by adding "Py" in front of a given string. If the given string begins with "Py" return the original string.
+
+
+const inputStr = document.getElementById("input-str");
+const submitStr = document.getElementById("submit-str");
+const ansStr = document.getElementById("ans-str");
+
+
+function createNewStr(str) {
+    if (str.substring(0,2) === "py") {
+        return str
+    } else {
+        return str.padStart(str.length + 2,"py")
+    }
+}
+
+submitStr.addEventListener("click", () => {
+    const inputValue = inputStr.value;
+    let newStr =  createNewStr(inputValue);
+    ansStr.style.fontSize = "18px";
+    ansStr.innerHTML = "Here is modified string: " + newStr;
+})
+
+
+
+
 // Remove a character at the specified position of a given string and return the new string
 
 // Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters. The string length must be broader than or equal to 1.
