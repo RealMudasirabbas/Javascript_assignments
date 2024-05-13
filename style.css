@@ -56,8 +56,14 @@ hr {
 }
 
 #submit-str,
+#submit_word,
 #submit-text,
-#submit_str {
+#submit_str,
+#submit_num,
+#submit_numbers,
+#submit-nums,
+#submit_marks,
+#submit_char {
     display: block;
     margin-left: 190px;
     background-color: rgb(110, 110, 187);
@@ -66,9 +72,29 @@ hr {
 }
 
 #input-text,
-#input_text {
+#input_text,
+#input_word,
+.input-nums,
+.marks,
+.numbers
+#input_char {
     margin-left:48px;
 }
-#submit-text {
+#submit-text,
+#submit_char {
     margin-left: 222px;
+}
+
+#user-submit {
+    display: block;
+    margin-left: 260px;
+
+}
+
+#submit_num {
+    margin-left: 183px;
+}
+
+#final-exam {
+    margin-right: 150px;
 }
