@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 15px;
+}
+
+/* Q1 */
+#div1 {
+    min-height: 180px;
+    border: 2px solid orangered;
+    background-color: bisque;
+}
+
+#input-text {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#user-submit {
+    background-color: aquamarine;
+    border-radius: 15px;
+    border: 2px solid darkcyan;
+}
+
+/* Q2 */
+#div2 {
+    min-height: 180px;
+    border: 2px solid rgb(195, 255, 0);
+    background-color: bisque;
+}
+
+#inputq2-1 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+#inputq2-2 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq2-1 {
+    background-color: rgb(127, 155, 255);
+    border-radius: 15px;
+    border: 2px solid rgb(38, 39, 94);
+}
+#btnq2-2 {
+    background-color: rgb(127, 155, 255);
+    border-radius: 15px;
+    border: 2px solid rgb(38, 39, 94);
+}
+
+/* Q3 */
+#div3 {
+    min-height: 180px;
+    border: 2px solid rgb(0, 255, 110);
+    background-color: bisque;
+}
+
+#inputq3 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq3 {
+    background-color: rgb(244, 96, 106);
+    border-radius: 15px;
+    border: 2px solid rgb(92, 9, 36);
+}
+
+/* Q4 */
+#div4 {
+    min-height: 180px;
+    border: 2px solid rgb(0, 170, 255);
+    background-color: bisque;
+}
+
+#iq4-1 {
+    display: flex;
+}
+#inputq4-1 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#iq4-2 {
+    display: flex;
+}
+#inputq4-2 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq4 {
+    background-color: rgb(244, 155, 96);
+    border-radius: 15px;
+    border: 2px solid rgb(92, 34, 9);
+}
+
+#pq4 {
+    color: rgb(113, 19, 38);
+}
+
+/* Q5 */
+#div5 {
+    min-height: 180px;
+    border: 2px solid rgb(103, 14, 22);
+    background-color: bisque;
+}
+
+#inputq5 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq5 {
+    background-color: rgb(111, 125, 4);
+    border-radius: 15px;
+    border: 2px solid rgb(60, 75, 21);
+}
+
+/* Q6 */
+#div6 {
+    min-height: 180px;
+    border: 2px solid rgb(14, 82, 103);
+    background-color: bisque;
+}
+
+#inputq6 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq6 {
+    background-color: rgb(4, 103, 125);
+    border-radius: 15px;
+    border: 2px solid rgb(21, 54, 75);
+}
+
+/* Q7 */
+#div7 {
+    min-height: 180px;
+    border: 2px solid rgb(14, 103, 29);
+    background-color: bisque;
+}
+
+#inputq7 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq7 {
+    background-color: rgb(134, 221, 102);
+    border-radius: 15px;
+    border: 2px solid rgb(43, 75, 21);
+}
+
+/* Q8 */
+#div8 {
+    min-height: 180px;
+    border: 2px solid rgb(103, 94, 14);
+    background-color: bisque;
+}
+
+#inputq8 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq8 {
+    background-color: rgb(196, 190, 32);
+    border-radius: 15px;
+    border: 2px solid rgb(111, 122, 40);
+}
+
+/* Q9 */
+#div9 {
+    min-height: 180px;
+    border: 2px solid rgb(103, 54, 14);
+    background-color: bisque;
+}
+
+#inpQ11-1 {
+    display: flex;
+}
+#inputq9-1 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#inpQ9-2 {
+    display: flex;
+}
+#inputq9-2 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#inpQ9-3 {
+    display: flex;
+}
+#inputq9-3 {
+    margin: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq9 {
+    background-color: rgb(196, 89, 32);
+    border-radius: 15px;
+    border: 2px solid rgb(122, 73, 40);
+    color: aliceblue;
+}
+
+/* Q10 */
+#div10 {
+    min-height: 180px;
+    border: 2px solid rgb(103, 94, 14);
+    background-color: bisque;
+}
+
+#inpQ10-1 {
+    display: flex;
+}
+#inputq10-1 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#inpQ10-2 {
+    display: flex;
+}
+#inputq10-2 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq10 {
+    background-color: rgb(96, 9, 20);
+    border-radius: 15px;
+    border: 2px solid rgb(122, 40, 62);
+    color: white;
+}
+
+/* Q11 */
+#div11 {
+    min-height: 180px;
+    border: 2px solid rgb(103, 94, 14);
+    background-color: bisque;
+}
+
+#inpQ11-1 {
+    display: flex;
+}
+#inputq11-1 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#inpQ11-2 {
+    display: flex;
+}
+#inputq11-2 {
+    margin-right: 10px;
+    border-radius: 15px;
+    height: 15px;
+}
+
+#btnq11 {
+    background-color: rgb(196, 190, 32);
+    border-radius: 15px;
+    border: 2px solid rgb(111, 122, 40);
+}
