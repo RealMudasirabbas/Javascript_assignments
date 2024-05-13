@@ -135,7 +135,7 @@ queryBtn.addEventListener('click', () => {
     const inputVal = queryInput.value;
     let modifiedString = modifyStr(inputVal);
     queryAns.style.fontSize = '18px';
-    queryAns.innerText = "Here is the modified word" + modifiedString;
+    queryAns.innerText = "Here is the modified word " + modifiedString;
 });
 
 // Write a JavaScript program to create another string from a given string with the first character of the given string added to the front and back.
