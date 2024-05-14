@@ -14,7 +14,7 @@ function evenOddNumbers() {
     }
 }
 
-// evenOddNumbers()
+evenOddNumbers()
 
 // Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers multiples of both three and five print "FizzBuzz".
 
@@ -32,7 +32,7 @@ function fizzBuzz() {
     }
 }
 
-// fizzBuzz()
+fizzBuzz()
 
 // Write a JavaScript program to find the Armstrong numbers of 3 digits.
 // Note : An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371.
@@ -62,7 +62,7 @@ function armsStrongNumbers(num) {
     }
 }
 
-// armsStrongNumbers(371)
+armsStrongNumbers(371)
 
 // Write a JavaScript program to sum 3 and 5 multiples under 1000.
 
@@ -77,7 +77,7 @@ function sumOfMultiplesOfThreeAndFive() {
     console.log("The sum of multiples of 3 and 5 is:",result);
 }
 
-// sumOfMultiplesOfThreeAndFive()
+sumOfMultiplesOfThreeAndFive()
 
 //  Calculate the sum of all the numbers in the following array
 const numbersArray = [1, 13, 22, 123, 49];
@@ -91,7 +91,7 @@ function sumOfAllNumbers(arr) {
     console.log("The sum of all numbers in an Array:",result);
 }
 
-// sumOfAllNumbers(numbersArray)
+sumOfAllNumbers(numbersArray)
 
 // Write a program that determines whether a given number is positive or negative.
 
@@ -103,8 +103,8 @@ function positiveOrNegativeNumber(num) {
     }
 }
 
-// positiveOrNegativeNumber(5)
-// positiveOrNegativeNumber(-5)
+positiveOrNegativeNumber(5)
+positiveOrNegativeNumber(-5)
 
 // Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
 
@@ -121,7 +121,7 @@ function calculateTheTicketPrice(age) {
     }
 }
 
-// calculateTheTicketPrice(24)
+calculateTheTicketPrice(24)
 
 // Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
 
@@ -142,7 +142,7 @@ function calculateDiscount(price) {
 }
 
 
-// calculateDiscount(120)
+calculateDiscount(120)
 
 
 
@@ -178,7 +178,7 @@ function sumOfTwoArrays(arr1,arr2) {
     
 }
 
-// sumOfTwoArrays(arr_1,arr_2)
+sumOfTwoArrays(arr_1,arr_2)
 
 
 
@@ -194,7 +194,7 @@ function sumOfTwoArrays(arr1,arr2) {
         }
     }
 
-    // reverseAnArray(arrElement)
+    reverseAnArray(arrElement)
 
 
 
@@ -210,7 +210,7 @@ function factorialOfANumber(num) {
     console.log(result);
 }
 
-// factorialOfANumber(6)
+factorialOfANumber(6)
 
 // let result = 0;
 
