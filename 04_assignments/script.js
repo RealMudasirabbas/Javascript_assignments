@@ -49,8 +49,7 @@ function calculatePowerOfANum(number,power) {
         let calculatedPower = number ** power;
         console.log(calculatedPower);
         num++
-        break;
-        // return calculatedPower
+        return calculatedPower
         
     }
 }
