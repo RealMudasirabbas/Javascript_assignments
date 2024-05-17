@@ -44,17 +44,46 @@ function calculatePowerOfANum(number,power) {
     }
 }
 
-// Write a javascript function to find the no of digits in a number using while loop.
+
+
+
 
 function findDigitsOfANumber(number) {
     let num = 0;
-    while (num < number) {
-        let convertedNum = number.toString();
-        let totalDigits = convertedNum.length;
-        console.log("This number has number of digits", totalDigits);
+    const convertedNum = number.toString();
+    let totalDigits = 0;
+    while (num < convertedNum.length) {
+        totalDigits++;
         num++;
-        return totalDigits
     }
+    // console.log("This number has number of digits", totalDigits);
+    console.log("This number has number of digits", totalDigits);
+    return totalDigits;
 }
 
-findDigitsOfANumber(8977777)
+findDigitsOfANumber(89444);
+
+
+
+
+
+
+// Write a javascript function to find the no of digits in a number using while loop.
+
+// function findDigitsOfANumber(number) {
+//     let num = 0;
+//     while (num < number) {
+//         let convertedNum = number.toString();
+//         let totalDigits = convertedNum.length;
+//         console.log("This number has number of digits", totalDigits);
+//         num++;
+//         return totalDigits
+//     }
+// }
+
+// findDigitsOfANumber(8977777)
+
+
+
+
+
