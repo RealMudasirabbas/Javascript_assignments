@@ -9,23 +9,15 @@ function displayNumbers() {
 
 // // Display Numbers from 3 to 1 ( do while)
 function displayNums() {
-    let newNum = 1;
+    let newNum = 3;
     do {
         console.log(newNum);
-        newNum++;
-    } while (newNum < 4);
+        newNum--;
+    } while (newNum > 0);
 }
 // // Write a javascript function to print Even numbers in given array
 
 let evenNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 22, 23, 43];
-// function checkEvenNumbr() {
-//     for (var i = 0; i < evenNums.length; i++) {
-//         var num = evenNums[i]
-//         if (num % 2 == 0) {
-//             console.log("Even: " + num)
-//         }
-//     }
-// }
 
 function checkEvenWhile() {
     let i = 0;
@@ -34,9 +26,7 @@ function checkEvenWhile() {
         if (num % 2 == 0) {
             console.log("Even: " + num);
         }
-        // else {
-        //     console.log("odd: " + num)
-        // }
+
         i++;
     }
 }
@@ -67,4 +57,4 @@ function findDigitsOfANumber(number) {
     }
 }
 
-// findDigitsOfANumber(8977777)
+findDigitsOfANumber(8977777)
