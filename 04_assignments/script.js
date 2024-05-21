@@ -33,20 +33,15 @@ function checkEvenWhile() {
 
 // Write a javascript function to find the power of a number using while loop
 
-function calculatePowerOfANum(number,power) {
+function calculatePowerOfANum(number, power) {
     let num = 0;
     while (num < power) {
         let calculatedPower = number ** power;
         console.log(calculatedPower);
-        num++
-        return calculatedPower
-        
+        num++;
+        return calculatedPower;
     }
 }
-
-
-
-
 
 function findDigitsOfANumber(number) {
     let num = 0;
@@ -63,11 +58,6 @@ function findDigitsOfANumber(number) {
 
 findDigitsOfANumber(89444);
 
-
-
-
-
-
 // Write a javascript function to find the no of digits in a number using while loop.
 
 // function findDigitsOfANumber(number) {
@@ -83,7 +73,35 @@ findDigitsOfANumber(89444);
 
 // findDigitsOfANumber(8977777)
 
+// for (let a = 0; a < 3; a++) {
+//     console.log("Parent loop count: ", a);
 
+//     for (let a = 0; a < 3; a++) {
+//         console.log("Child loop count: ", a);
+//     }
+// }
 
+const person = {
+    name: "Mudasir",
+    age: 19,
+    education: "Fs.c pre-medical",
+    [Symbol.iterator]() {
+        const obj = Object.entries(this);
+        let index = 0;
 
+        return {
+            next() {
+                if (index < obj.length) {
+                    const [key, value] = obj[index++];
+                    return { value: { key, value }, done: false };
+                } else {
+                    return { done: true };
+                }
+            },
+        };
+    },
+};
 
+for (let prop of person) {
+    console.log(prop);
+}
