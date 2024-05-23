@@ -42,7 +42,7 @@ const subjects = ["Math", "English", "Stats"];
 
 subjects.push("discrete mathematics");
 console.log("After adding a new element",subjects);
-subjects[1] = "chemistry";9
+subjects[1] = "chemistry";
 console.log("After replacing an element",subjects);
 subjects.shift();
 console.log("After removing an element from start",subjects);
@@ -50,9 +50,10 @@ subjects.pop();
 console.log("After removing the element from the end",subjects);
 subjects.unshift("Calculus");
 console.log("After adding a new element in the begining", subjects);
-const slicedArr = subjects.slice(1, 3);
+const slicedArr = subjects.slice(1,);
 console.log("The original array",subjects);
 console.log("The new array",slicedArr);
+
 // Question No 4
 
 // const startBtn = document.getElementById("start");
