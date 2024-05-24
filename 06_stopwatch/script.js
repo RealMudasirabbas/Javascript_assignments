@@ -14,7 +14,7 @@ let stopwatch;
 function updateTime() {
     seconds++;
 
-    if (seconds > 59) {
+    if (seconds == 60) {
         seconds = 0;
         minutes++;
     }
@@ -55,3 +55,23 @@ resetBtn.addEventListener("click", () => {
     minutesPara.innerHTML = "00";
     secondsPara.innerHTML = "00";
 });
+
+
+
+// question no 2
+
+// calculate total time
+
+const orderDate = new Date("2020-03-26")
+let calculateTimeForOrderDate = orderDate.getTime()
+const deliveryDate = new Date("2020-04-02")
+let calculateTimeForDeliveryDate = deliveryDate.getTime()
+
+let calculateTotalTime = calculateTimeForDeliveryDate - calculateTimeForOrderDate;
+let totalSecondsInADay = 86400*1000;
+
+// calculate total days
+
+let totalDays = calculateTotalTime/totalSecondsInADay
+console.log(totalDays);
+
