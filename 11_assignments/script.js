@@ -6,7 +6,7 @@ const newNumsArray = nums.map((num) => {
     return num * 2;
 });
 
-// console.log(newNumsArray);
+console.log(newNumsArray);
 
 // Question no 2
 
@@ -18,7 +18,7 @@ const newNumbers = numbers.map((num) => {
     return num.toString();
 });
 
-// console.log(newNumbers);
+console.log(newNumbers);
 
 // Question no 3
 
@@ -27,11 +27,11 @@ const newNumbers = numbers.map((num) => {
 const names = ["ali", "shariq", "bilal", "shoaib", "tariq"];
 
 const capitalizedNames = names.map((name) => {
-    let slicedName = name.slice(1,);
+    let slicedName = name.slice(1);
     return name[0].toUpperCase().concat(slicedName);
 });
 
-// console.log(capitalizedNames);
+console.log(capitalizedNames);
 
 // Question 4
 
@@ -43,7 +43,7 @@ const squaredNumsArray = numbersArray.map((num) => {
     return num ** 2;
 });
 
-// console.log(squaredNumsArray);
+console.log(squaredNumsArray);
 
 // Question no 5
 
@@ -65,7 +65,7 @@ function sumOfPositiveNums(arr) {
     return total;
 }
 
-// console.log(sumOfPositiveNums([1, 2, -3, 4, 6]));
+console.log(sumOfPositiveNums([1, 2, -3, 4, 6]));
 
 // Question no 6
 
@@ -95,7 +95,7 @@ function CalculateMeanAndMedian(arr) {
     return [mean, median];
 }
 
-// console.log(CalculateMeanAndMedian(numbersArray));
+console.log(CalculateMeanAndMedian(numbersArray));
 
 // Question no 7
 
@@ -113,7 +113,7 @@ function returnInitials(str) {
     return abbreviatedStr.join("");
 }
 
-// console.log(returnInitials("shariq abdullah"));
+console.log(returnInitials("shariq abdullah"));
 
 // Question no 8
 
@@ -124,7 +124,7 @@ function findAgeDifference(old, young) {
     return `The age difference between family members is ${ageDifference} and the old and young family members are ${old} and ${young} years old respectively `;
 }
 
-// console.log(findAgeDifference(55,30))
+console.log(findAgeDifference(55, 30));
 
 // Question no 9
 
@@ -138,7 +138,7 @@ function returnNumbersArr(arr) {
     return result;
 }
 
-// console.log(returnNumbersArr([1,2,3,4,5,6,7,8,9,10]))
+console.log(returnNumbersArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // Question no 10
 
@@ -152,7 +152,7 @@ function returnEvenNumbersArr(arr) {
     return result;
 }
 
-// console.log(returnEvenNumbersArr([1,2,3,4,5,6,7,8,9,10]));
+console.log(returnEvenNumbersArr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // Question no 11
 
@@ -168,7 +168,7 @@ function returnStringArr(arr) {
     return result;
 }
 
-// console.log(returnStringArr(["tariq","abdullah","aqib","mudasir"]));
+console.log(returnStringArr(["tariq", "abdullah", "aqib", "mudasir"]));
 
 // Question no 12
 
@@ -207,7 +207,7 @@ const personsDiv = document.getElementById("persons");
 
 let result = persons.map((person) => {
     console.log("Mr", person.lastname);
-    personsDiv.innerHTML += person.lastname + "<br>" + "<br>";
+    personsDiv.innerHTML += "Mr " + person.lastname + "<br>" + "<br>";
 });
 
 // Question no 14
@@ -252,25 +252,27 @@ const namesArr = [
     "sana",
     "tahira",
     "taimoor",
+    "parveen"
 ];
 
 const searchInput = document.getElementById("search-name");
 const nameText = document.getElementById("name-text");
-const searchBtn = document.getElementById("search-Btn")
+const searchBtn = document.getElementById("search-Btn");
 
-
-searchBtn.addEventListener("click",() => {
-    let searchVal = searchInput.value
-    let namesMappedArr = namesArr.map((name) => {
-        
+let namesMappedArr = namesArr.map((name) => {
+    
         return name
     });
-
+    
+    nameText.innerHTML = namesMappedArr
     console.log(namesMappedArr);
+    
+    searchInput.addEventListener("input", () => {
+        
+        let searchVal = searchInput.value;
+    let names = namesMappedArr.filter((name) => {
+        return name.includes(searchVal.toLowerCase())
+    })
+    nameText.innerHTML = names
 
-    if (namesArr.includes(searchVal)) {
-        nameText.innerHTML = "This name is present in the array: " + searchVal;
-    } else {
-        nameText.innerHTML = "Sorry, this name is not present in the array";
-    }
-})
+});
