@@ -27,7 +27,7 @@ const newNumbers = numbers.map((num) => {
 const names = ["ali", "shariq", "bilal", "shoaib", "tariq"];
 
 const capitalizedNames = names.map((name) => {
-    let slicedName = name.slice(1);
+    let slicedName = name.slice(1,);
     return name[0].toUpperCase().concat(slicedName);
 });
 
@@ -87,7 +87,7 @@ function CalculateMeanAndMedian(arr) {
     let middleIndex = Math.floor(sortedArr.length / 2);
 
     if (length % 2 == 0) {
-        median = (sortedArr[middleIndex] + sortedArr[middleIndex - 1]) / 2;
+        median = (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
     } else {
         median = Math.floor(sortedArr[middleIndex]);
     }
@@ -121,7 +121,7 @@ function returnInitials(str) {
 
 function findAgeDifference(old, young) {
     let ageDifference = old - young;
-    return `The age difference between family members is ${ageDifference} and the old and young family members is ${old} and ${young} years old respectively `;
+    return `The age difference between family members is ${ageDifference} and the old and young family members are ${old} and ${young} years old respectively `;
 }
 
 // console.log(findAgeDifference(55,30))
